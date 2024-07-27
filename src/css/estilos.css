@@ -18,7 +18,7 @@ body {
 }
 
 .header img {
-    width: 150px;
+    max-width: 1440px;
 }
 
 
@@ -32,17 +32,18 @@ body {
 }
 
 .item-left img{
-    width: 80vh;
+    max-width: 1440px;
 }
 
 .about .item-right {
-    padding: 30px;
+    padding: 50px;
     color: var(--light);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     height: auto;
+    max-width: 520px;
 }
 
 .about .item-right h2 {
@@ -56,9 +57,8 @@ body {
     font-size: 1.4rem;
 }
 
-.btn-register {
+.btn-register a{
     background-color: var(--light);
-    color: var(--hard);
     font-size: 1.4rem;
     width: 140px;
     height: 45px;
@@ -70,39 +70,47 @@ body {
     transition: 0.3s;
 }
 
-.btn-register:hover {
+.btn-register a:hover {
     background-color: var(--soft);
+    color: var(--light);
 }
 
 .footer {
     height: 70px;
 }
 
-.footer .social {
+.footer nav {
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
 
 }
 
-.footer .social a{
+.footer nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
 }
 
-.footer .social i{
+.footer nav li{
+    padding: 5px;
+}
+
+.footer nav i{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 2.2rem;
     border: 1px solid var(--light);
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    color: var(--light);
-    
+    width: 50px;
+    height: 50px;
+    color: var(--light);   
 }
 
-.footer .social i:hover{
+.footer nav i:hover{
     color: var(--soft);
     border-color: var(--soft);
 }
